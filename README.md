@@ -16,7 +16,7 @@
 ## 使用:
 
 ```
-$ git clone https://github.com/zuorn/tmux.conf
+$ git clone https://github.com/mainkeys/tmux.conf
 $ cp tmux-config/.tmux.conf ~/.tmux.conf
 ```
 重启 tmux `restart tmux` 或者 在 tmux 窗口中，先按下 `Ctrl+b` 指令前缀，然后按下系统指令:，进入到命令模式后输入 `source-file ~/.tmux.conf`，回车后生效。
@@ -27,11 +27,11 @@ $ cp tmux-config/.tmux.conf ~/.tmux.conf
 
 ### 修改指令前缀
 
-可根据自己的喜好来设置，由于我把电脑的 Caps Lock 键和 Ctrl 键做了调换，所以感觉 Ctrl + f 按起来比较方便。
+可根据自己的喜好来设置，由于我把电脑的 Caps Lock 键和 Ctrl 键做了调换，所以感觉 Ctrl + a 按起来比较方便。
 ```sh
-#set -g prefix C-f #
+#set -g prefix C-a #
 #unbind C-f # C-b 即 Ctrl+b 键，unbind 意味着解除绑定
-#bind C-f send-prefix # 绑定 Ctrl+f 为新的指令前缀
+#bind C-a send-prefix # 绑定 Ctrl+f 为新的指令前缀
 
 # 从tmux v1.6版起，支持设置第二个指令前缀
 #set-option -g prefix2 ` # 设置一个不常用的`键作为指令前缀，按键更快些
